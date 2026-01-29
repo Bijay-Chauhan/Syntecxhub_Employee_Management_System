@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "./Record.css";
 
 export default function Record() {
   const [form, setForm] = useState({
@@ -86,10 +87,7 @@ export default function Record() {
       <h3 className="text-lg font-semibold p-4">
         Create/Update Employee Record
       </h3>
-      <form
-        onSubmit={onSubmit}
-        className="border rounded-lg overflow-hidden p-4"
-      >
+      <form onSubmit={onSubmit} className="record-form">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-slate-900/10 pb-12 md:grid-cols-2">
           <div>
             <h2 className="text-base font-semibold leading-7 text-slate-900">

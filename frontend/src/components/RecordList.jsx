@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./RecordList.css";
 
 const Record = (props) => (
   <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
@@ -80,7 +81,7 @@ export default function RecordList() {
   return (
     <>
       <h3 className="text-lg font-semibold p-4">Employee Records</h3>
-      <div className="border rounded-lg overflow-hidden">
+      <div className="record-table">
         <div className="relative w-full overflow-auto">
           <table className="w-full caption-bottom text-sm">
             <thead className="[&amp;_tr]:border-b">

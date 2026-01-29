@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.navbar-logo img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: center;
+}
+
+.navbar-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.navbar-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}

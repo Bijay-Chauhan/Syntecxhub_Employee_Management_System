@@ -1,0 +1,49 @@
+.record-form {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.record-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings inside form */
+.record-form h2 {
+  color: var(--text);
+}
+
+/* Input focus improvement */
+.record-form input[type="text"] {
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.record-form input[type="text"]:focus {
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.25);
+}
+
+/* Radio buttons hover */
+.record-form input[type="radio"]:hover {
+  transform: scale(1.05);
+}
+
+/* Submit button – primary action */
+.record-form input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.record-form input[type="submit"]:hover {
+  background: var(--primary-dark);
+}
